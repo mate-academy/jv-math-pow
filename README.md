@@ -1,1 +1,1 @@
-# jv-Math.pow
+# jv-math-pow
