@@ -13,8 +13,9 @@ public class CustomMathPowTest {
                 int actualResult = customMathPow.pow(number, exponential);
                 int expectedResult = (int) Math.pow(number, exponential);
 
-                Assert.assertEquals("Test failed with number = " + number
-                        + " and exponential = " + exponential, actualResult, expectedResult);
+                Assert.assertEquals("Test failed with number = "
+                        + number + " and exponential = "
+                        + exponential, actualResult, expectedResult);
             }
         }
     }
