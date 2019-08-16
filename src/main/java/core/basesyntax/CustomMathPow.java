@@ -1,5 +1,5 @@
 package core.basesyntax;
-
+import java.io.*;
 public class CustomMathPow {
 
     /**
@@ -9,6 +9,7 @@ public class CustomMathPow {
      *      exponential - значение степени
      */
     public int pow(int number, int exponential) {
+        //some solution
         return 0;
     }
 }
