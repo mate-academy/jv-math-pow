@@ -10,13 +10,13 @@ public class CustomMathPow {
      */
     public int pow(int number, int exponential) {
         double value = 1;
-        if (number != 0) {
+        if (number == 0) {
+            return 0;
+        } else {
             for (int i = 0; i < exponential; i++) {
                 value *= number;
             }
             return (int) value;
-        } else {
-            return 0;
         }
     }
 }
