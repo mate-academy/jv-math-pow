@@ -15,8 +15,8 @@ public class CustomMathPowTest {
 
                 Assert.assertEquals(
                         "Test failed with number = " + number + " , exponential = " + exponential,
-                        actualResult,
-                        expectedResult);
+                        expectedResult,
+                        actualResult);
             }
         }
     }
