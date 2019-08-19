@@ -11,7 +11,7 @@ public class CustomMathPow {
     public long pow(long number, long exponential) {
 
         if ( number < 0 || exponential < 0) throw new IllegalArgumentException("Number and Exponential must be positive number");
-    	if ( exponential == 0 ) return 1;
+    	if ( exponential == 0 && number != 0 ) return 1;
     	if ( number == 0 ) return 0;
 
     	long retValue = 1;
