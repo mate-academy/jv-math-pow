@@ -9,7 +9,7 @@ public class CustomMathPow {
      *      exponential - значение степени
      */
     public int pow(int number, int exponential) {
-        if(exponential < 1) return 1;
+        if(exponential < 1 || exponential == 0) return 1;
         return number*pow(number, exponential-1);
     }
 }
