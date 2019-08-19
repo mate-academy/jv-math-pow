@@ -11,7 +11,9 @@ public class CustomMathPow {
     public int pow(int number, int exponential) {
 
         int result = 1;
-        for (int i = 0; i < exponential; i++) result *= number;
+        for (int i = 0; i < exponential; i++) {
+            result *= number;
+        }
         return result;
     }
 }
