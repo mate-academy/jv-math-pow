@@ -16,6 +16,6 @@ public class CustomMathPow {
         for (int i = 1; i < exp; i++) {
             res *= number;
         }
-        return res;
+        return res < 0 ? Integer.MAX_VALUE : res;
     }
 }
