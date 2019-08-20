@@ -9,13 +9,13 @@ public class CustomMathPow {
      * exponential - значение степени
      */
     public int pow(int number, int exponential) {
-        if (number < 0 || exponential < 0) {
-            throw new IllegalArgumentException("Number and Exponential must be positive number");
-        } else if (exponential == 0 || number == 0) {
-            if (exponential == 0) {
+        if (number <= 0 || exponential <= 0) {
+            if (number == 0) {
+                return 0;
+            } else if (exponential == 0) {
                 return 1;
             } else {
-                return number;
+                throw new IllegalArgumentException("number and exponential must be positive");
             }
         }
         int retValue = 1;
@@ -25,9 +25,7 @@ public class CustomMathPow {
             }
             exponential = exponential >> 1;
             number = number * number;
-            //System.out.println(retValue);
         }
-        System.out.println(retValue);
         return retValue;
     }
 }
