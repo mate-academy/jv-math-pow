@@ -9,6 +9,7 @@ public class CustomMathPow {
      *      exponential - значение степени
      */
     public int pow(int number, int exponential) {
+        //змінив версію до 11, тепер все працює
         if (exponential == 0) {
             return 1;
         } else {
