@@ -9,14 +9,14 @@ class CustomMathPow {
      * exponential - значение степени
      */
     public int pow(int number, int exponential) {
+        int y = 1;
         if (exponential < 0) {
             number = 1 / number;
-            exponential = -exponential;
+            exponential = - exponential;
         }
         if (exponential == 0) {
             return 1;
         }
-        int y = 1;
         while (exponential > 1) {
             if (exponential % 2 == 0) {
                 number *= number;
