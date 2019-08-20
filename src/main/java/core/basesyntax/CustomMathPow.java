@@ -12,10 +12,10 @@ public class CustomMathPow {
         if (exponential == 0) {
             return 1;
         }
-        int r = number;
+        int calculationResult = number;
         for (int i = 1; i < exponential; i++) {
-            r *= number;
+            calculationResult *= number;
         }
-        return r;
+        return calculationResult;
     }
 }
