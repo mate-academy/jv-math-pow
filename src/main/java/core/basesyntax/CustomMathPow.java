@@ -11,14 +11,14 @@ public class CustomMathPow {
     public int pow(int number, int exponential) {
         int count = 1;
         int result = number;
-        do {
+
+        for (int i = 1; i < exponential; i++) {
             if (exponential == 0) {
                 result = 1;
             } else if (exponential != 1 && exponential > 0) {
                 result = result * number;
             }
-            count++;
-        } while (exponential > count);
+        }
         return result;
     }
 }
