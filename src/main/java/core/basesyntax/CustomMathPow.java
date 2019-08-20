@@ -9,12 +9,13 @@ public class CustomMathPow {
      *      exponential - значение степени
      */
     public int pow(int number, int exponential) {
-        int multiplier = number;
+
+        int res = number;
 
         for (int i = 0; i < exponential - 1; i++) {
-            number *= multiplier;
+            res *= number;
         }
 
-        return number;
+        return res;
     }
 }
