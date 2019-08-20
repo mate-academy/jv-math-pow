@@ -7,15 +7,14 @@ public class CustomMathPow {
      *      number - число которое надо возводить в какую-то степень
      *      exponential - значение степени
      */
-    public int pow(int number, int exp) {
-        // negative numbers and negative exp remains unchecked
-        if (exp == 0) {
+    public int pow(int number, int exponential) {
+        if (exponential == 0) {
             return 1;
         }
         int res = number;
-        for (int i = 1; i < exp; i++) {
+        for (int i = 1; i < exponential; i++) {
             res *= number;
         }
-        return res < 0 ? Integer.MAX_VALUE : res;
+        return res;
     }
 }
