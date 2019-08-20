@@ -20,11 +20,8 @@ public class CustomMathPow {
         }
         int retValue = 1;
         while (exponential > 0) {
-            if ((exponential & 1) == 1) {
-                retValue = retValue * number;
-            }
-            exponential = exponential >> 1;
-            number = number * number;
+            retValue = retValue * number;
+            exponential--;
         }
         return retValue;
     }
