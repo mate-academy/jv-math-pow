@@ -5,15 +5,14 @@ public class CustomMathPow {
     /**
      * Написать метод pow(int number, int exponential), который является аналогом метода
      * Math.pow() и принимает 2 целых числа:
-     *      number - число которое надо возводить в какую-то степень
-     *      exponential - значение степени
+     * number - число которое надо возводить в какую-то степень
+     * exponential - значение степени
      */
     public int pow(int number, int exponential) {
-        //змінив версію до 11, тепер все працює
         if (exponential == 0) {
             return 1;
         } else {
-            return pow(number, exponential-1) * number;
+            return pow(number, exponential - 1) * number;
         }
     }
 }
