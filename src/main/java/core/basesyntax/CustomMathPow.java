@@ -18,11 +18,11 @@ public class CustomMathPow {
                 throw new IllegalArgumentException("number and exponential must be positive");
             }
         }
-        int retValue = 1;
+        int returnValue = 1;
         while (exponential > 0) {
-            retValue = retValue * number;
+            returnValue = returnValue * number;
             exponential--;
         }
-        return retValue;
+        return returnValue;
     }
 }
