@@ -8,12 +8,9 @@ public class CustomMathPow {
      * exponential - значение степени
      */
     public int pow(int number, int exponential) {
-        int result = 1;
-        for (int i = 0; i < exponential; i++) {
+        int result = number;
+        for (int i = 1; i < exponential; i++) {
             result *= number;
-            if (result < 0) {
-                return 2147483647;
-            }
         }
         return result;
     }
