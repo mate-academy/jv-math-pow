@@ -9,14 +9,10 @@ public class CustomMathPow {
      * exponential - значение степени
      */
     public int pow(int number, int exponential) {
-        if (number <= 0 || exponential <= 0) {
-            if (number == 0) {
-                return 0;
-            } else if (exponential == 0) {
-                return 1;
-            } else {
-                throw new IllegalArgumentException("number and exponential must be positive");
-            }
+        if (number <= 0 || exponential < 0) {
+            return 0;
+        }else if(exponential == 0){
+            return 1;
         }
         int returnValue = 1;
         while (exponential > 0) {
