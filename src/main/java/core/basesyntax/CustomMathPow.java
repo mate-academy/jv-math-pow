@@ -9,11 +9,11 @@ public class CustomMathPow {
      *      exponential - значение степени
      */
     public int pow(int number, int exponential) {
-        if(number == 0){
+        if(number == 0) {
             return 0;
         }
 
-        if(number == 1 || exponential == 0){
+        if(number == 1 || exponential == 0) {
             return 1;
         }
 
