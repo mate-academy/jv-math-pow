@@ -9,9 +9,9 @@ public class CustomMathPow {
      * exponential - значение степени
      */
     public int pow(int number, int exponential) {
-        if (number <= 0 || exponential < 0) {
+        if (number == 0) {
             return 0;
-        }else if(exponential == 0){
+        if(exponential == 0){
             return 1;
         }
         int returnValue = 1;
