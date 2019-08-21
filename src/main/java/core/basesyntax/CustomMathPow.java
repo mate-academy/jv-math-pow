@@ -18,6 +18,6 @@ public class CustomMathPow {
         if (exponential == 1) {
             return number;
         }
-        return number * pow(number, exponential-1);
+        return number * pow(number, exponential - 1);
     }
 }
