@@ -8,6 +8,7 @@ public class CustomMathPow {
      * number - число которое надо возводить в какую-то степень
      * exponential - значение степени
      */
+
     public int pow(int number, int exponential) {
         int result;
         if (exponential == 0) {
