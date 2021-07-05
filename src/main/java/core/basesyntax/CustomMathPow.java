@@ -8,7 +8,13 @@ public class CustomMathPow {
      *      number - число которое надо возводить в какую-то степень
      *      exponential - значение степени
      */
+
     public int pow(int number, int exponential) {
-        return 0;
+        int result = 1;
+        for (int i = 0; i < exponential; i++) {
+            result *= number;
+        }
+        return result;
     }
+
 }
