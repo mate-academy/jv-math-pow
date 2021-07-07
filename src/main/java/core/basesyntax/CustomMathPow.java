@@ -9,6 +9,6 @@ public class CustomMathPow {
      *      exponential - значение степени
      */
     public int pow(int number, int exponential) {
-        return 0;
+        return (int) Math.pow(number, exponential);
     }
 }
